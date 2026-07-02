@@ -45,6 +45,8 @@ footer {
   align-items: center;
   color: var(--fg);
   border-top: 1px solid var(--fg);
+  max-width: 800px;
+  box-sizing: border-box;
 }
 
 ::mg {
@@ -359,45 +361,18 @@ nav ul li a {
   cursor: pointer;
 }
 
-/* About */
-
 /* Mobile */
 @media screen and (max-width: 45em) {
   body {
-    padding: 0;
+    padding: 0 10px;
 	padding-bottom: env(safe-area-inset-bottom);
   }
-  .no-mobile {
-	display: none;
-  }
+  /*
   #canvas {
 	padding: 10px;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .window-buttons {
-	pointer-events: none;
-	padding: 0;
+  footer {
+	padding: 10px;
   }
-  .close-btn,
-  .maximize-btn,
-  .minimize-btn {
-	color: var(--bg_alt);
-  }
-}
-
-/* JavaScript warning */
-.no-fouc {
-  visibility: hidden;
-}
-
-#noscript-warning {
-  color: var(--red);
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1em;
+  */
 }

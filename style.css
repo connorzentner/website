@@ -43,10 +43,10 @@ footer {
   padding: 1em;
   text-align: right;
   align-items: center;
-  color: var(--fg);
-  border-top: 1px solid var(--fg);
   max-width: 800px;
   box-sizing: border-box;
+  color: var(--fg);
+  border-top: 1px solid var(--fg);
 }
 
 ::mg {
@@ -151,17 +151,17 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--yellow);
   padding: 1em;
+  background-color: var(--yellow);
 }
 
 .title {
-  color: var(--bg);
   font-size: 40px;
   font-weight: bold;
   font-family: sans-serif;
   user-select: none;
   -webkit-user-select: none;
+  color: var(--bg);
 }
 .title:hover {
   text-decoration: none;
@@ -240,7 +240,6 @@ nav ul li a {
 }
 
 .grid-box {
-  /* padding: 0.5em; */
   width: 100%;
   border: 1px solid var(--fg);
   background: var(--bg);
@@ -256,7 +255,7 @@ nav ul li a {
 }
 
 .grid-title {
-  /* font-weight: bold; */
+  font-weight: bold;
 }
 
 .grid-content {
@@ -367,12 +366,4 @@ nav ul li a {
     padding: 0 10px;
 	padding-bottom: env(safe-area-inset-bottom);
   }
-  /*
-  #canvas {
-	padding: 10px;
-  }
-  footer {
-	padding: 10px;
-  }
-  */
 }

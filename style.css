@@ -4,16 +4,17 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  font-size: 1em;
+  /* font-size: 1em; */
+  font-size: 16px;
 }
 
 :root {
-  --bg     : #181818;
-  --bg_alt : #252525;
-  --mg     : #3b3b3b;
-  --mg_alt : #777777;
-  --fg     : #b9b9b9;
-  --fg_alt : #dedede;
+  --bg:      #181818;
+  --bg_alt:  #252525;
+  --mg:      #3b3b3b;
+  --mg_alt:  #777777;
+  --fg:      #b9b9b9;
+  --fg_alt:  #dedede;
   --yellow:  #dbb32d;
   --orange:  #e67f43;
   --red:     #ed4a46;
@@ -46,7 +47,11 @@ footer {
   max-width: 800px;
   box-sizing: border-box;
   color: var(--fg);
-  border-top: 1px solid var(--fg);
+  border-top: 2px solid var(--fg);
+}
+
+footer p {
+  font-size: 14px;
 }
 
 ::mg {
@@ -112,7 +117,7 @@ i {
 .tag {
   padding: 0.1em 0.3em;
   background: var(--bg);
-  border: 1px solid var(--fg);
+  border: 2px solid var(--fg);
 }
 
 .tag[class*='active'] {
@@ -136,7 +141,7 @@ i {
 }
 
 .link {
-  color: var(--fg);
+  color: var(--fg_alt);
   text-decoration: underline;
 }
 
@@ -163,6 +168,7 @@ header {
   -webkit-user-select: none;
   color: var(--bg);
 }
+
 .title:hover {
   text-decoration: none;
   background-color: transparent;
@@ -191,7 +197,7 @@ header {
   text-align: center;
   text-decoration: none;
   color: var(--fg);
-  border: 1px solid var(--fg);
+  border: 2px solid var(--fg);
 }
 
 .nav-stacked ul li a:hover {
@@ -208,7 +214,10 @@ nav ul {
 }
 
 nav ul li a {
-  padding: 0.3em 0.3em;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.2em;
 }
 
 .tab-active {
@@ -241,7 +250,7 @@ nav ul li a {
 
 .grid-box {
   width: 100%;
-  border: 1px solid var(--fg);
+  border: 2px solid var(--fg);
   background: var(--bg);
 }
 
@@ -255,6 +264,8 @@ nav ul li a {
 }
 
 .grid-title {
+  font-family: monospace;
+  font-size: 18px;
   font-weight: bold;
 }
 

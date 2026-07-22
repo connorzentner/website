@@ -324,7 +324,7 @@ nav ul li a {
 
 .description,
 .description em {
-  color: var(--cyan)
+  color: var(--fg_alt)
 }
 
 .warning,

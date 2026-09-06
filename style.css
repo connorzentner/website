@@ -183,7 +183,7 @@ header {
   padding: 10px;
 }
 
-.nav-stacked ul {
+.menu ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,7 +192,7 @@ header {
   gap: 15px;
 }
 
-.nav-stacked ul li a {
+.menu ul li a {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -200,7 +200,7 @@ header {
   border: 2px solid var(--fg);
 }
 
-.nav-stacked ul li a:hover {
+.menu ul li a:hover {
   color: var(--bg);
   background-color: var(--fg);
 }
@@ -376,5 +376,8 @@ nav ul li a {
   body {
     padding: 0 10px;
 	padding-bottom: env(safe-area-inset-bottom);
+  }
+  nav ul li a {
+	font-size: 16px;
   }
 }
